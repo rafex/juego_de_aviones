@@ -2,11 +2,9 @@
   "name": "juego_de_aviones",
   "version": "1.0.0",
   "description": "Es un juego de aviones que se le ocurrio a mi hijo y le ayude a hacerlo realidad",
-  "main": "app.js",
+  "main": "server_app.js",
   "scripts": {
-    "prod": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "dev2": "node app.js",
+    "server": "node server_app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
