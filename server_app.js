@@ -5,7 +5,7 @@ const path = require('path');
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-  let folderPath = './html';
+  let folderPath = './src/html';
   console.log(req.url);
   let filePath = '.' + req.url;
   if (filePath === './') {

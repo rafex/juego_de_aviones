@@ -4,7 +4,9 @@
   "description": "Es un juego de aviones que se le ocurrio a mi hijo y le ayude a hacerlo realidad",
   "main": "app.js",
   "scripts": {
-    "dev": "node app.js",
+    "prod": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "dev2": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,20 +24,23 @@
   "author": "Raúl Eduardo González Argote - by @rafex",
   "contributors": [
     {
-    "name": "Raúl Eduardo González Argote",
-    "email": "rafex@rafex.dev",
-    "url": "https://rafex.dev"
+      "name": "Raúl Eduardo González Argote",
+      "email": "rafex@rafex.dev",
+      "url": "https://rafex.dev"
     },
     {
       "name": "Nadia AB",
       "email": "a@rafex.dev",
       "url": "https://rafex.dev"
-      }
-    
+    }
   ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/rafex/juego_de_aviones/issues"
   },
-  "homepage": "https://github.com/rafex/juego_de_aviones#readme"
+  "homepage": "https://github.com/rafex/juego_de_aviones#readme",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
