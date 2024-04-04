@@ -1,0 +1,41 @@
+{
+  "name": "juego_de_aviones",
+  "version": "1.0.0",
+  "description": "Es un juego de aviones que se le ocurrio a mi hijo y le ayude a hacerlo realidad",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafex/juego_de_aviones.git"
+  },
+  "keywords": [
+    "aviones",
+    "planes",
+    "niño",
+    "niños",
+    "niña",
+    "niñas"
+  ],
+  "author": "Raúl Eduardo González Argote - by @rafex",
+  "contributors": [
+    {
+    "name": "Raúl Eduardo González Argote",
+    "email": "rafex@rafex.dev",
+    "url": "https://rafex.dev"
+    },
+    {
+      "name": "Nadia AB",
+      "email": "a@rafex.dev",
+      "url": "https://rafex.dev"
+      }
+    
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/rafex/juego_de_aviones/issues"
+  },
+  "homepage": "https://github.com/rafex/juego_de_aviones#readme"
+}
