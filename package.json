@@ -4,6 +4,8 @@
   "description": "Es un juego de aviones que se le ocurrio a mi hijo y le ayude a hacerlo realidad",
   "main": "server_app.js",
   "scripts": {
+    "compile-prod": "webpack --mode production",
+    "compile-dev": "webpack --mode development",
     "server": "node server_app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -38,6 +40,8 @@
   },
   "homepage": "https://github.com/rafex/juego_de_aviones#readme",
   "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.0",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   }
