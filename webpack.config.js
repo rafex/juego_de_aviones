@@ -16,7 +16,7 @@ module.exports = {
       hash: true,
       title: 'My Awesome application',
       myPageHeader: 'Hello World',
-      template: './src/html/assets/index.html',
+      template: path.resolve(__dirname,'./src/html/assets')+ '/index.html',
       filename: 'index.html',
       meta: {
         charset: 'utf-8',
@@ -30,7 +30,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          context: './src/html/',
+          context: path.resolve(__dirname,'./src/html'),
           from: '**/*.html',
           to: path.resolve(__dirname, 'dist'),
           force: true,
