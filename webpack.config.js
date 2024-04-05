@@ -29,8 +29,21 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(__dirname, './src/html/') + "/*.html", to: path.resolve(__dirname, 'dist') },      
-      ],
+        {
+          context: './src/html/',
+          from: '**/*.html',
+          to: path.resolve(__dirname, 'dist'),
+          force: true,
+          globOptions: {
+            ignore: [
+              // Ignore all `txt` files
+              "**/*.txt",
+              // Ignore all files in all subdirectories
+              "**/assets/**",
+            ],
+          },
+        }
+      ]
     }),
   ],
   devServer: {
